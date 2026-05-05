@@ -1,0 +1,28 @@
+# Core orchestration
+langchain
+langchain-core
+langchain-community
+
+# Multi-model providers
+langchain-openai
+langchain-google-genai
+langchain-groq
+langchain-mistralai
+
+# Agent workflows
+langgraph
+
+# Embeddings / tokenization
+tiktoken
+
+# Vector store (for RAG)
+faiss-cpu
+
+# Env + API
+python-dotenv
+requests
+
+# Backend (optional but common)
+fastapi
+uvicorn
+langchain_huggingface
