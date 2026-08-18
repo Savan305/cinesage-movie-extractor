@@ -4,12 +4,12 @@ load_dotenv()
 from typing import List, Optional
 from pydantic import BaseModel
 from langchain_core.output_parsers import PydanticOutputParser
-from langchain_mistralai import ChatMistralAI
+from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 
 # Model
-model = ChatMistralAI(
-    model="mistral-small-2506",
+model = ChatGroq(
+    model="llama3-70b-8192",
     temperature=0
 )
 

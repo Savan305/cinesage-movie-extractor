@@ -1,14 +1,15 @@
+from langchain_groq import ChatGroq
 import streamlit as st
 from dotenv import load_dotenv
 load_dotenv()
 
 import json
-from langchain_mistralai import ChatMistralAI
+from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 
 # ------------------ MODEL ------------------
-model = ChatMistralAI(
-    model="mistral-small-2506",
+model = ChatGroq(
+    model="llama3-70b-8192",
     temperature=0
 )
 
